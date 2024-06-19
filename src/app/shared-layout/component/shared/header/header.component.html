@@ -1,0 +1,159 @@
+
+<nav id="navbar" class="navbar navbar-expand-lg p-0 m-0">
+  <button
+    class="navbar-toggler border-0 me-auto"
+    type="button"
+    data-bs-target="#navbarSupportedContent"
+    data-bs-toggle="collapse"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    (click)="open(content)">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- <div class="head p-2 mx-4" (click)="navigateTo('home')">शिवज्ञान</div> -->
+   <img src="../../../../../assets/img/logo1.png" class="logo" alt="" (click)="navigateTo('home')">
+  <div
+    class="collapse navbar-collapse d-none justify-content-around"
+    id="navbarSupportedContent"
+  >
+    <ul class="navbar-nav gap-5">
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="navbar"
+          role="button"
+          aria-expanded="false"
+          (click)="navigateTo('home')"
+        >
+          मुख्यपृष्ठ
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="navbar"
+          role="button"
+          aria-expanded="false"
+          (click)="navigateTo('king')"
+        >
+          राजा
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="navbar"
+          role="button"
+          aria-expanded="false"
+          (click)="navigateTo('army')"
+        >
+          सैन्य
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="navbar"
+          role="button"
+          aria-expanded="false"
+          (click)="navigateTo('coronation')"
+        >
+          राज्याभिषेक
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="navbar"
+          role="button"
+          aria-expanded="false"
+          (click)="navigateTo('family')"
+        >
+          कुटुंब
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- offcanvas start -->
+
+<ng-template #content let-offcanvas>
+  <div class="offcanvas-header">
+    <!-- <h4 class="offcanvas-title" id="offcanvas-basic-title">शिवज्ञान</h4> -->
+    <img src="../../../../../assets/img/logo1.png" class="logo" alt="" (click)="navigateTo('home')">
+
+    <button
+      type="button"
+      class="btn-close"
+      aria-label="Close"
+      (click)="offcanvas.dismiss('Cross click')"
+    ></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav gap-4">
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          (click)="offcanvas.close('Save click')"
+          (click)="navigateTo('home')"
+          id="navbar"
+          role="button"
+          aria-expanded="false"
+        >
+          मुख्यपृष्ठ
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          (click)="offcanvas.close('Save click')"
+          (click)="navigateTo('king')"
+          id="navbar"
+          role="button"
+          aria-expanded="false"
+        >
+          राजा
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          (click)="offcanvas.close('Save click')"
+          (click)="navigateTo('army')"
+          id="navbar"
+          role="button"
+          aria-expanded="false"
+        >
+          सैन्य
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          (click)="offcanvas.close('Save click')"
+          (click)="navigateTo('coronation')"
+          id="navbar"
+          role="button"
+          aria-expanded="false"
+        >
+          राज्याभिषेक
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          (click)="offcanvas.close('Save click')"
+          (click)="navigateTo('family')"
+          id="navbar"
+          role="button"
+          aria-expanded="false"
+        >
+          कुटुंब
+        </a>
+      </li>
+    </ul>
+  </div>
+</ng-template>
+<!-- end -->

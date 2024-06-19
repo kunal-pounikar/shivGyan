@@ -1,0 +1,43 @@
+.navbar {
+  top: 0;
+  background-color: #edeef5 !important;
+  position: sticky;
+  top: -1px;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    width: 150px;
+    margin-left: 20px;
+    padding: 2px;
+  }
+  .nav-link {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(84, 58, 48);
+    gap: 10rem;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+.offcanvas-header {
+  background-color: #edeef5 !important;
+  .logo {
+    width: 150px;
+    padding: 2px;
+  }
+}
+.offcanvas-body {
+  background-color: #edeef5 !important;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(84, 58, 48);
+  &:hover {
+    transform: scale(1.2);
+  }
+}

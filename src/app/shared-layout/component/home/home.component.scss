@@ -1,0 +1,532 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container-fluid {
+  .landing {
+    background-image: linear-gradient(
+        45deg,
+        rgba(128, 109, 109, 0.85),
+        rgba(198, 189, 210, 0.85)
+      ),
+      url("../../../../assets/img/headerback.jpg");
+    background-position: center;
+    background-size: cover;
+    border: none;
+    border-radius: 0;
+    .headerimg {
+      margin: 20px 0;
+      top: 0;
+      width: 70%;
+      filter: drop-shadow(10px 10px 10px rgba(27, 27, 27, 0.5));
+    }
+    .thought {
+      margin: 16rem 5rem 0 0;
+      font-size: 20px;
+      font-weight: 700;
+      text-align: justify;
+    }
+    .name {
+      margin-top: 1rem;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .float {
+      width: 1400px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      position: absolute;
+      bottom: 0px;
+      .text1 {
+        width: 100px;
+        animation: float 7s linear infinite;
+      }
+      .text2 {
+        width: 90px;
+        animation: float 5s linear infinite;
+      }
+      .text3 {
+        width: 80px;
+        animation: float 4s linear infinite;
+      }
+      .text4 {
+        width: 80px;
+        animation: float 8s linear infinite;
+      }
+      .text5 {
+        width: 90px;
+        animation: float 5.5s linear infinite;
+      }
+      @keyframes float {
+        0% {
+          transform: translateY(0);
+          opacity: 0;
+        }
+        50% {
+          transform: translateY(-10vh);
+          opacity: 1;
+        }
+        70% {
+          transform: translateY(-30vh);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(-80vh);
+          opacity: 0;
+        }
+      }
+    }
+  }
+  .raje {
+    background: linear-gradient(
+      45deg,
+      #d7d2d2,
+      #faf4f1,
+      #f6e58a,
+      #fbde94,
+      #fafad2
+    );
+    padding: 2rem 5rem;
+    border: none;
+    border-radius: 0;
+    text-align: justify;
+    .head {
+      margin-bottom: 0.5rem;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .text {
+      font-size: 16px;
+      .more {
+        font-weight: 700;
+        cursor: pointer;
+        animation: changeColor 5s infinite;
+      }
+      @keyframes changeColor {
+        0% {
+          color: rgb(218, 0, 0);
+        }
+        25% {
+          color: rgb(79, 65, 0);
+        }
+        50% {
+          color: rgb(0, 93, 86);
+        }
+        75% {
+          color: rgb(153, 128, 157);
+        }
+        100% {
+          color: rgb(0, 83, 21);
+        }
+      }
+    }
+    .rajeimg {
+      width: 60%;
+      height: 85%;
+    }
+  }
+  .army {
+    background: linear-gradient(
+      45deg,
+      rgba(208, 199, 199, 0.85),
+      rgba(235, 223, 251, 0.85)
+    );
+    background-position: center;
+    background-size: cover;
+    border: none;
+    border-radius: 0;
+    padding: 2rem 5rem;
+    cursor: pointer;
+    .head {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .flip-card {
+      width: 300px;
+      height: 350px;
+      margin: 1rem;
+      .title {
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: black;
+        text-align: center;
+        margin: 0;
+      }
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+
+        .flip-card-front,
+        .flip-card-back {
+          box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          border: 1px solid coral;
+          border-radius: 1rem;
+        }
+        .flip-card-front {
+          background: linear-gradient(
+            45deg,
+            #d7d2d2,
+            #faf4f1,
+            #f6e58a,
+            #fbde94,
+            #fafad2
+          );
+          .img-fluid {
+            width: 100%;
+            height: 300px;
+            padding: 10px;
+          }
+        }
+        .flip-card-back {
+          background: linear-gradient(
+            45deg,
+            #d7d2d2,
+            #faf4f1,
+            #f6e58a,
+            #fbde94,
+            #fafad2
+          );
+          transform: rotateY(180deg);
+        }
+      }
+    }
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+  }
+
+  .coronation {
+    width: 100%;
+    height: 400px;
+    background-image: url("../../../../assets/img/shivrajyaabhishek.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 0;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s ease;
+    flex-direction: column-reverse;
+    color: #ffff;
+
+    .title {
+      font-size: 24px;
+      margin-left: 20px;
+      text-align: start;
+      font-weight: 700;
+    }
+    .text {
+      font-size: 13px;
+      text-align: start;
+      margin-left: 20px;
+      font-weight: 200;
+      letter-spacing: 2px;
+      opacity: 0;
+      transition: all 0.3s ease;
+      .more {
+        font-weight: 700;
+        font-size: 15px;
+        cursor: pointer;
+        animation: changeColor 5s infinite;
+      }
+      @keyframes changeColor {
+        0% {
+          color: rgb(218, 0, 0);
+        }
+        25% {
+          color: rgb(79, 65, 0);
+        }
+        50% {
+          color: rgb(0, 93, 86);
+        }
+        75% {
+          color: rgb(153, 128, 157);
+        }
+        100% {
+          color: rgb(0, 83, 21);
+        }
+      }
+    }
+  }
+  .coronation:hover {
+    height: 420px;
+    .text {
+      transition: all 0.3s ease;
+      margin: 20px;
+      opacity: 1;
+      max-height: 40px;
+    }
+  }
+}
+@media (max-width: 1405px) {
+  .container-fluid {
+    .landing {
+      .headerimg {
+        margin: 20px 0;
+        width: 90%;
+      }
+      .thought {
+        margin: 16rem 5rem 0 0;
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .name {
+        margin-top: 1rem;
+        font-size: 16px;
+        font-weight: 700;
+      }
+      .float {
+        width: 1024px;
+        bottom: 0px;
+      }
+    }
+    .raje {
+      .head {
+        margin-bottom: 0.5rem;
+        font-size: 24px;
+        font-weight: 700;
+      }
+      .text {
+        font-size: 16px;
+      }
+      .rajeimg {
+        width: 80%;
+        height: 90%;
+      }
+    }
+    .army {
+      .head {
+        font-size: 24px;
+        font-weight: 700;
+      }
+      .flip-card {
+        width: 200px;
+        height: 250px;
+        margin: 1rem;
+        .title {
+          font-size: 1.5rem;
+          font-weight: 900;
+        }
+        .flip-card-inner {
+          width: 100%;
+          height: 100%;
+          .flip-card-front {
+            .img-fluid {
+              width: 100%;
+              height: 200px;
+              padding: 10px;
+            }
+          }
+          .flip-card-back {
+            .title {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .coronation {
+      width: 100%;
+      height: 400px;
+      .title {
+        font-size: 24px;
+        margin-left: 20px;
+        font-weight: 700;
+      }
+      .text {
+        font-size: 13px;
+        margin-left: 20px;
+        font-weight: 200;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .container-fluid {
+    .landing {
+      .headerimg {
+        margin: 20px 0;
+        width: 80%;
+      }
+      .thought {
+        margin: 10rem 5rem 0 0;
+        font-size: 16px;
+        font-weight: 700;
+      }
+      .name {
+        margin-top: 1rem;
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .float {
+        width: 760px;
+        bottom: 0px;
+      }
+    }
+    .raje {
+      .head {
+        font-size: 22px;
+        font-weight: 700;
+      }
+      .text {
+        font-size: 14px;
+      }
+      .rajeimg {
+        width: 90%;
+        height: 100%;
+      }
+    }
+    .army {
+      .head {
+        font-size: 22px;
+        font-weight: 700;
+      }
+      .flip-card {
+        width: 140px;
+        height: 180px;
+        margin: 1rem;
+        .title {
+          font-size: 1rem;
+          font-weight: 700;
+        }
+        .flip-card-inner {
+          width: 100%;
+          height: 100%;
+          .flip-card-front {
+            .img-fluid {
+              width: 100%;
+              height: 200px;
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .coronation {
+      width: 100%;
+      height: 400px;
+      .title {
+        font-size: 24px;
+        margin-left: 20px;
+        font-weight: 700;
+      }
+      .text {
+        font-size: 13px;
+        margin-left: 20px;
+        font-weight: 200;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
+@media (max-width: 760px) {
+  .container-fluid {
+    .landing {
+      .headerimg {
+        margin: 20px 0;
+        width: 70%;
+      }
+      .thought {
+        margin: 3rem 3rem 0 0;
+        font-size: 12px;
+        font-weight: 500;
+      }
+      .name {
+        margin-top: 0.5rem;
+        font-size: 10px;
+        font-weight: 700;
+      }
+      .float {
+        width: 400px;
+        bottom: 0px;
+        font-size: 10px;
+      }
+    }
+    .raje {
+      padding: 1rem;
+      .head {
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .text {
+        font-size: 12px;
+      }
+      .rajeimg {
+        width: 90%;
+        height: 100%;
+      }
+    }
+    .army {
+      padding: 1rem;
+      .head {
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .colitem {
+        display: flex;
+        justify-content: center;
+        .flip-card {
+          width: 180px;
+          height: 200px;
+          margin: 1rem;
+          .title {
+            font-size: 1rem;
+            font-weight: 700;
+          }
+          .flip-card-inner {
+            width: 100%;
+            height: 100%;
+            .flip-card-front {
+              .img-fluid {
+                width: 100%;
+                height: 200px;
+                padding: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .coronation {
+      width: 100%;
+      height: 200px;
+      .title {
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .text {
+        font-size: 12px;
+        font-weight: 200;
+      }
+    }
+    .coronation:hover {
+      height: 220px;
+    }
+  }
+}
+@media (max-width: 760px) {
+  .container-fluid {
+    .landing {
+      .float {
+        width: 320px;
+        bottom: 0px;
+        font-size: 5px;
+      }
+    }
+  }
+}

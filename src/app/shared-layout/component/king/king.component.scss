@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container-fluid {
+  .card {
+    background: linear-gradient(
+      45deg,
+      #d7d2d2,
+      #faf4f1,
+      #f6e58a,
+      #fbde94,
+      #fafad2
+    );
+    padding: 2rem 5rem;
+    border: none;
+    border-radius: 0;
+    .head {
+      margin-bottom: 0.5rem;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .text {
+      font-size: 16px;
+      text-align: justify;
+      margin-bottom: 3rem;
+    }
+    .img-fluid {
+      margin-top: 3rem;
+      width: 60%;
+      height: 60%;
+    }
+  }
+}
+ 
+@media (max-width: 1405px) {
+  .container-fluid {
+    .card {
+      .head {
+        margin-bottom: 0.5rem;
+        font-size: 24px;
+        font-weight: 700;
+      }
+      .text {
+        font-size: 16px;
+      }
+      .img-fluid {
+        margin-top: 3rem;
+      width: 60%;
+      height: 60%;
+      }
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .container-fluid {
+    .card {
+      .head {
+        font-size: 22px;
+        font-weight: 700;
+      }
+      .text {
+        font-size: 14px;
+      }
+      .img-fluid {
+        margin-top: 4rem;
+      width: 80%;
+      height: 40%;
+      }
+    }
+  }
+}
+@media (max-width: 760px) {
+  .container-fluid {
+    .card {
+    padding: 1rem;
+      .head {
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .text {
+        font-size: 12px;
+      }
+      .img-fluid {
+        margin: 0;
+        width: 80%;
+        height: 60%;
+      }
+    }
+
+
+  }
+}
